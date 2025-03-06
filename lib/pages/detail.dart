@@ -5,9 +5,9 @@ import 'package:flutter_pdf_gen/pages/preview.dart';
 class DetailPage extends StatelessWidget {
   final BillModel singleBillItem;
   const DetailPage({
-    Key? key,
+    super.key,
     required this.singleBillItem,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

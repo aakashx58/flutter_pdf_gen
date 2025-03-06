@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_pdf_gen/pages/detail.dart';
-import 'package:remixicon/remixicon.dart';
 
 import '../models/bill_model.dart';
 
 class FinalView extends StatelessWidget {
-  FinalView({Key? key}) : super(key: key);
+  FinalView({super.key});
 
   final bills = <BillModel>[
     BillModel(
@@ -106,11 +105,10 @@ class FinalView extends StatelessWidget {
     return AppBar(
       title: const Text('Bills'),
       centerTitle: true,
-      leading:
-          IconButton(onPressed: () {}, icon: const Icon(Remix.menu_2_line)),
+      leading: IconButton(onPressed: () {}, icon: const Icon(Icons.menu)),
       actions: [
-        IconButton(onPressed: () {}, icon: const Icon(Remix.filter_2_line)),
-        IconButton(onPressed: () {}, icon: const Icon(Remix.search_2_line)),
+        IconButton(onPressed: () {}, icon: const Icon(Icons.filter)),
+        IconButton(onPressed: () {}, icon: const Icon(Icons.search)),
       ],
     );
   }
